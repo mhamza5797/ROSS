@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    color: #fff;
+    margin: 0;
+
+}
+
+body{
+    background-image: url("imgs/img1.jpg")
+}
+
+.intro{
+    border-left: .4rem solid #fff;
+    padding-left: 1rem;
+}
