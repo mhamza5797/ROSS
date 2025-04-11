@@ -6,7 +6,8 @@
 }
 
 body{
-    background-image: url("img1.jpg")
+    background-image: url("img1.jpg");
+    background-color: red;
 }
 
 .intro{
