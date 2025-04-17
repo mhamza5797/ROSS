@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     color: #fff;
     margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
 body{
-    background-color: red;
+    background-image: url("imgs/img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .intro{
     border-left: .4rem solid #fff;
-    padding-left: 1rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
 }
+
+
+
+.customLetters{
+    letter-spacing: .7rem;
+}
+
