@@ -26,7 +26,6 @@
             </svg>
           </button>
       
-          <!-- Nav Links -->
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
               class="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse md:items-center md:justify-end ulcoloer">
@@ -46,7 +45,7 @@
             <div class="col-md-6 d-flex flex-column justify-content-center">
                 <div class="display">
                     <h1 class="customLetters">YOUR TRUSTWORTHY<br>HOUSE PAINTER</h1>
-                    <p>
+                    <p style="margin-top: 5px; border-radius: 15px; padding: 15px; color: #17191A; text-transform: uppercase;">
                         Our clients are our number one priority. 
                         <br>
                         We make the effort to ensure that they are completely satisfied with our work.
@@ -57,9 +56,9 @@
 
         <div class="intro">
             <div class="intro-bg">
-                <h1>
+                <h2>
                     DO YOU HAVE A SPECIFIC PROJECT THAT REQUIRES PROFESSIONAL ATTENTION?
-                </h1>
+                </h2>
                 <p style="color: #fff;">
                     OUR SERVICES ARE DESIGNED TO TACKLE EVEN THE MOST COMPLEX PROJECTS.
                     <br>
@@ -68,27 +67,80 @@
             </div>
         </div>
 
+        <!-- <div class="estBox bg-dark">
+
+            <form class="max-w-md mx-auto">
+                <div style="margin-bottom: 30px;" class="relative">
+                    <label for="underline_select" class="sr-only">Underline select</label>
+                    <select id="underline_select" class="cusSelect block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                        <option style="color: #000;" selected>Choose a service</option>
+                        <option style="color: #000;" value="Cleaning">Cleaning</option>
+                        <option style="color: #000;" value="Painting">Painting</option>
+                    </select>
+                </div>
+
+                <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative">
+                        <input type="number" style="padding: 10px;" type="text" id="selectRooms" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                        <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-dark dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Select Rooms</label>
+                    </div>
+                    <div class="relative">
+                        <input type="number" style="padding: 10px;" type="text" id="selectBathrooms" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                        <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-dark dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Select Bathrooms (Optional)</label>
+                    </div>
+                </div>
+                
+                <div  style="margin-top: 30px;" class="relative">
+                    <input type="number" style="padding: 10px;" type="text" id="floating_outlined" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                    <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-dark dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Total Square Feet</label>
+                </div>
+                
+                <span style="margin-top: 10px; display: inline-block;">Select Cleaning (Optinal)</span>
+                
+                <br>
+                <label style="margin: 5px 10px 5px 0; text-align: center;" class="inline-flex items-center cursor-pointer">
+                    <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Fridge</span>
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+                </label>
+                <label style="margin-top: 5px; text-align: center;" class="inline-flex items-center cursor-pointer">
+                    <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Microwave</span>
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+                </label>
+                <label style="margin-top: 5px; text-align: center;" class="inline-flex items-center cursor-pointer">
+                    <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Oven</span>
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+                </label>
+
+                <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative">
+                    <button id="clacNow" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Estimate Now</button>
+                    </div>
+                    <div class="relative">
+                        <span id="showTotal">00</span>
+                    </div>
+                </div>
+
+              </form>
+        </div> -->
+
         <div class="img-gal">
             <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-              <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="imgs/img2.jpeg" class="block w-full h-full object-contain mx-auto cursor-pointer" alt="">
                     </div>
-                    <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                         <img src="imgs/img3.jpeg" class="block w-full h-full object-contain mx-auto cursor-pointer" alt="">
                     </div>
-                    <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="imgs/img4.jpeg" class="block w-full h-full object-contain mx-auto cursor-pointer" alt="">
                     </div>
-                    <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="imgs/img5.jpeg" class="block w-full h-full object-contain mx-auto cursor-pointer" alt="">
                     </div>
-                    <!-- Item 5 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="imgs/img6.jpeg" class="block w-full h-full object-contain mx-auto cursor-pointer" alt="">
                     </div>
@@ -124,7 +176,6 @@
     </button>
     <img id="modalImage" src="" class="max-h-[90vh] max-w-[90vw] object-contain z-40" />
   
-    <!-- Next Arrow -->
     <button id="nextImage"
             class="absolute right-0 top-1/2 -translate-y-1/2 px-4 py-2 text-white text-6xl font-bold z-50 hover:text-gray-300 cursor-pointer transition-all"
             aria-label="Next">
@@ -133,7 +184,7 @@
   </div>
     </div>
 
-    <footer style="margin-top: 50px;" class="bg-dark">
+  <footer style="margin-top: 50px;" class="bg-dark">
       <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span style="color: #fff;" class="text-sm sm:text-center">© 2025 Roos Coatings. All Rights Reserved.
       </span>
@@ -142,6 +193,27 @@
               <a href="#" class="me-4 md:me-6"></a>
           </li>
       </ul>
+
+      <div class="flex sm:justify-center sm:mt-0">
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                  <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+              </svg>
+            <span class="sr-only">Facebook page</span>
+        </a>
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                  <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+              </svg>
+            <span class="sr-only">Discord community</span>
+        </a>
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+              <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+          </svg>
+            <span class="sr-only">Twitter page</span>
+        </a>
+    </div>
       
       </div>
   </footer>
