@@ -45,9 +45,16 @@ body{
 }
 .logobg{
     border-radius: 50%;
-    width: 450px;
-    height: 450px;
     margin-top: 35px;
     margin-bottom: 35px;
     box-shadow: 80px 50px 120px #000;
+    width: 100%; /* default full width */
+    max-width: 400px; /* optional max width */
+}
+
+@media (max-width: 576px) {
+    .logobg {
+        width: 70%;  /* shrink logo on small screens */
+        margin: 35px auto; /* center if needed */
+    }
 }
