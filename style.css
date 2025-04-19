@@ -11,27 +11,29 @@
 
 body{
     background-color: #fff;
+    background-image: url(imgs/bg.jpg);
     background-position: center;
     background-size: cover;
 }
 
 
 .intro{
-    border-left: .6rem solid #17191A;
+    border-left: .6rem solid #13574b;
     padding: 2rem;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 
 
-
 .customLetters{
     letter-spacing: .7rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px #13574b;
 
 }
 
 .intro-bg{
-    background-color: #17191A;
+    background-color: #13574b;
     color: #fff;
     padding: 2rem;
 }
@@ -39,7 +41,7 @@ body{
 .display{
     padding: 2rem;
     color: #17191A;
-    border-bottom: .3rem solid #17191A;
+    border-bottom: .3rem solid #13574b;
 }
 .logobg{
     border-radius: 50%;
@@ -67,4 +69,16 @@ body{
     border-top: none;
     border-left: none;
     border-right: none;
+}
+.sliderStyles{
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.innerSlider{
+    padding: 35px;
+    cursor: pointer;
+    background-color: #13574b;
+    height: 350px;
 }

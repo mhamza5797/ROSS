@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  
   const modal = document.getElementById('imageModal');
   const modalImg = document.getElementById('modalImage');
   const closeModal = document.getElementById('closeModal');
@@ -43,8 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
       if (e.key === 'Escape') modal.classList.add('hidden');
     }
   });
+  
 
-
+  
   // const selectedOption = document.querySelector('#underline_select');
 
 
@@ -67,8 +70,30 @@ document.addEventListener('DOMContentLoaded', function () {
   // })
   
   
-  
-  
-
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 1200,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    },
+  });
 
 });
