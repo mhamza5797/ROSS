@@ -47,11 +47,28 @@
             <div class="col-md-6 d-flex flex-column justify-content-center">
                 <div class="display">
                     <h1 class="customLetters">Precision in every stroke. Pride in every finish</h1>
-                    <p style="text-shadow: 1px 1px 2px #3F7D58; margin-top: 5px; border-radius: 15px; color: #17191A; text-transform: uppercase;">
+                    <p style="text-shadow: 1px 1px 2px #3F7D58; margin-top: 5px; border-radius: 15px; color: #13574b; text-transform: uppercase;">
                         Our clients are our number one priority. 
                         <br>
                         We make the effort to ensure that they are completely satisfied with our work.
                     </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center mt-4">
+                        <div class="relative">
+                            <a href="#estsection" class="aScroll btnCus w-full inline-flex items-center justify-center">
+                                USE OUR ESTIMATOR NOW
+                                <i class="arrowhov fa-solid fa-arrow-down ms-2"></i>
+                            </a>
+                        </div>
+
+                        <div class="relative">
+                            <a href="#estsection" class="btnCus cusHov w-full inline-flex items-center justify-center">
+                                BOOK CONSULTATION NOW
+                                <i class="arrowhovv fa-solid fa-arrow-down ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -69,12 +86,98 @@
             </div>
         </div>
 
+<div id="estsection" class="row align-items-center" style="margin-bottom: 50px;">
+    <!-- Form Section -->
+    <div class="col-12 col-md-6 mb-4">
+        <div class="estBox">
+            <form class="max-w-md mx-auto w-100">
+                <h1>GET AN ESTIMATE NOW</h1>
+
+                <div class="relative" style="margin-bottom: 30px;">
+                    <label for="underline_select" class="sr-only">Underline select</label>
+                    <select id="selectedOption" class="cusSelect block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+                        <option style="color: #000;" value="Choose" selected>Choose a service</option>
+                        <option style="color: #000;" value="Cleaning">Cleaning</option>
+                        <option style="color: #000;" value="Painting">Painting</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 mb-3">
+                        <div class="relative">
+                            <input type="number" min="0" style="padding: 10px; border: 1px solid #fff;" id="selectRooms" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label style="background-color: #13574b;" for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1">Select Rooms</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 mb-3">
+                        <div class="relative">
+                            <input type="number" min="0" style="padding: 10px; border: 1px solid #fff;" id="selectBathrooms" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label style="background-color: #13574b;" for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1">Select Bathrooms</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <input type="number" min="0" style="padding: 10px; border: 1px solid #fff;" id="selectSqft" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                    <label style="background-color: #13574b;" for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1">Total Square Feet</label>
+                </div>
+
+                <span style="margin-top: 10px; display: inline-block;">Select Cleaning</span><br>
+
+                <div class="d-flex flex-wrap gap-3 mb-4">
+                    <label style="margin: 5px 10px 5px 0; text-align: center;" class="inline-flex items-center cursor-pointer">
+                        <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Fridge</span>
+                        <input id="frideInput" type="checkbox" value="" class="sr-only peer">
+                        <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+                    </label>
+                    <label style="margin-top: 5px; text-align: center;" class="inline-flex items-center cursor-pointer">
+                        <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Microwave</span>
+                        <input id="microwaveInput" type="checkbox" value="" class="sr-only peer">
+                        <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+                    </label>
+                    <label style="margin-top: 5px; text-align: center;" class="inline-flex items-center cursor-pointer">
+                        <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Oven</span>
+                        <input id="ovenInput" type="checkbox" value="" class="sr-only peer">
+                        <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+                    </label>
+                </div>
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-12 col-sm-6 mb-3">
+                        <button style="background-color: #fff; color: #13574b; padding: 10px 15px; width: 100%;" id="clacNow" type="button" class="bg-blue-700 rounded-lg text-sm dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Estimate Now</button>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <span style="display: block; background-color: #fff; color: #13574b; padding: 10px 15px; text-align: center;" id="showTotal">$0.00</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <h1 style="text-align: center; color: #fff; background-color: #13574b; padding: 15px; font-size: 1.5rem; text-transform: uppercase;">Booking System Coming Soon!</h1>
+    </div>
+</div>
+
+        <div class="intro">
+            <div class="intro-bg">
+                <h2>
+                    OUR SERVICES
+                </h2>
+                <p style="color: #fff;">
+                    We founded our business on three main principles - quality, pricing, and service - and we pride ourselves on our commitment to these principles each day.
+                    Ross Coatings provides outstanding contracting services to all of our clients, and are here to ensure that all of your needs are met. 
+                    Take a look below to see the variety of services we offer, and what we can do for you today.
+                </p>
+            </div>
+        </div>
+            
 
         <div style="margin-bottom: 50px;" class="w-full max-w-5xl px-4">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card p-6 rounded-xl text-center transition-all duration-300">
+                  <div style="background-color: #13574b;" class="card p-6 rounded-xl text-center transition-all duration-300">
                     <div class="innerSlider">
                         <i style="margin-bottom: 25px;" class="fa-2xl fa-solid fa-house"></i>
                         <h1 class="sliderStyles">custom homes</h1>
@@ -87,7 +190,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card bg-dark p-6 rounded-xl text-center transition-all duration-300">
+                  <div style="background-color: #13574b;" class="card p-6 rounded-xl text-center transition-all duration-300">
                     <div class="innerSlider">
                         <i style="margin-bottom: 25px;" class="fa-2xl fa-solid fa-building"></i>
                         <h1 class="sliderStyles">commercial & residentials</h1>
@@ -101,7 +204,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card bg-dark p-6 rounded-xl text-center transition-all duration-300">
+                  <div style="background-color: #13574b;" class="card p-6 rounded-xl text-center transition-all duration-300">
                     <div class="innerSlider">
                         <i style="margin-bottom: 25px;" class="fa-2xl fa-solid fa-stairs"></i>
                         <h1 class="sliderStyles">staircase staining</h1>
@@ -114,7 +217,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card bg-dark p-6 rounded-xl text-center transition-all duration-300">
+                  <div style="background-color: #13574b;" class="card p-6 rounded-xl text-center transition-all duration-300">
                     <div class="innerSlider">
                         <i style="margin-bottom: 25px;" class="fa-2xl fa-solid fa-paint-roller"></i>
                         <h1 class="sliderStyles">Interior & exterior painting</h1>
@@ -127,7 +230,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card bg-dark p-6 rounded-xl text-center transition-all duration-300">
+                  <div style="background-color: #13574b;" class="card p-6 rounded-xl text-center transition-all duration-300">
                     <div class="innerSlider">
                         <i style="margin-bottom: 25px;" class="fa-2xl fa-solid fa-star"></i>
                         <h1 class="sliderStyles">Floor Epoxy</h1>
@@ -139,73 +242,13 @@
                   </div>
                 </div>
               </div>
-        
-              <!-- Navigation Arrows -->
+ 
               <div style="color: #fff;" class="swiper-button-next"></div>
               <div style="color: #fff" class="swiper-button-prev"></div>
             </div>
         </div>
-        
-          
 
-        <!-- <div class="estBox bg-dark">
-
-            <form class="max-w-md mx-auto">
-                <div style="margin-bottom: 30px;" class="relative">
-                    <label for="underline_select" class="sr-only">Underline select</label>
-                    <select id="underline_select" class="cusSelect block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-                        <option style="color: #000;" selected>Choose a service</option>
-                        <option style="color: #000;" value="Cleaning">Cleaning</option>
-                        <option style="color: #000;" value="Painting">Painting</option>
-                    </select>
-                </div>
-
-                <div class="grid md:grid-cols-2 md:gap-6">
-                    <div class="relative">
-                        <input type="number" style="padding: 10px;" type="text" id="selectRooms" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                        <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-dark dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Select Rooms</label>
-                    </div>
-                    <div class="relative">
-                        <input type="number" style="padding: 10px;" type="text" id="selectBathrooms" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                        <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-dark dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Select Bathrooms (Optional)</label>
-                    </div>
-                </div>
-                
-                <div  style="margin-top: 30px;" class="relative">
-                    <input type="number" style="padding: 10px;" type="text" id="floating_outlined" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-                    <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-dark dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Total Square Feet</label>
-                </div>
-                
-                <span style="margin-top: 10px; display: inline-block;">Select Cleaning (Optinal)</span>
-                
-                <br>
-                <label style="margin: 5px 10px 5px 0; text-align: center;" class="inline-flex items-center cursor-pointer">
-                    <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Fridge</span>
-                    <input type="checkbox" value="" class="sr-only peer">
-                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
-                </label>
-                <label style="margin-top: 5px; text-align: center;" class="inline-flex items-center cursor-pointer">
-                    <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Microwave</span>
-                    <input type="checkbox" value="" class="sr-only peer">
-                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
-                </label>
-                <label style="margin-top: 5px; text-align: center;" class="inline-flex items-center cursor-pointer">
-                    <span class="text-sm font-medium text-gray-900 dark:text-gray-300">Oven</span>
-                    <input type="checkbox" value="" class="sr-only peer">
-                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
-                </label>
-
-                <div class="grid md:grid-cols-2 md:gap-6">
-                    <div class="relative">
-                    <button id="clacNow" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Estimate Now</button>
-                    </div>
-                    <div class="relative">
-                        <span id="showTotal">00</span>
-                    </div>
-                </div>
-
-              </form>
-        </div> -->
+      
 
         <div class="img-gal">
             <div id="custom-controls-gallery" class="relative w-full group" data-carousel="slide">

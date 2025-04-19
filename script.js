@@ -47,27 +47,61 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
 
-  
-  // const selectedOption = document.querySelector('#underline_select');
+
+  const selectedOption = document.querySelector('#selectedOption');
+  const calcNow = document.querySelector('#clacNow');
+  const showTotal = document.querySelector('#showTotal');
+
+  selectedOption.addEventListener('change', () => {
+    
+    calcNow.onclick = () => {
+      if (selectedOption.value === 'Cleaning') {
+        
+        const regRooms = parseInt(document.querySelector('#selectRooms').value || 0);
+        const bathRooms = parseInt(document.querySelector('#selectBathrooms').value || 0);
+        const addSqft = parseInt(document.querySelector('#selectSqft').value || 0);
+
+        const fridgePrice = document.querySelector('#frideInput').checked ? 100 : 0;
+        const microwavePrice = document.querySelector('#microwaveInput').checked ? 50 : 0;
+        const ovenPrice = document.querySelector('#ovenInput').checked ? 200 : 0;
+
+        const basePrice = 1500;
+        const totalRooms = regRooms * 50;
+        const totalBathRooms = bathRooms * 90;
+        const totalSqft = addSqft * 1.50;
+
+        const totalPrice = basePrice + totalRooms + totalBathRooms + totalSqft + fridgePrice + microwavePrice + ovenPrice;
+
+        showTotal.innerHTML = '';
+        showTotal.append(`$${totalPrice.toFixed(2)}`);
+      }else if(selectedOption.value === 'Painting'){
+        const regRooms = parseInt(document.querySelector('#selectRooms').value || 0);
+        const bathRooms = parseInt(document.querySelector('#selectBathrooms').value || 0);
+        const addSqft = parseInt(document.querySelector('#selectSqft').value || 0);
+
+        const fridgePrice = document.querySelector('#frideInput').checked ? 100 : 0;
+        const microwavePrice = document.querySelector('#microwaveInput').checked ? 50 : 0;
+        const ovenPrice = document.querySelector('#ovenInput').checked ? 200 : 0;
+
+        const basePrice = 2000;
+        const totalRooms = regRooms * 150;
+        const totalBathRooms = bathRooms * 250;
+        const totalSqft = addSqft * 3.50;
+
+        const totalPrice = basePrice + totalRooms + totalBathRooms + totalSqft + fridgePrice + microwavePrice + ovenPrice;
+
+        showTotal.innerHTML = '';
+        showTotal.append(`$${totalPrice.toFixed(2)}`);
+      }else {
+        showTotal.innerHTML = '';
+        showTotal.append('Please select a service.');
+      }
+    };
+
+  });
+   
 
 
-
-  // const services = selectedOption.addEventListener('change', () =>{
-  
-  //   const regRooms = document.querySelector('#selectRooms');
-  //   const bathRooms = document.querySelector('#selectBathrooms');
-  
-  //   if(selectedOption.value == 'Cleaning'){
-  //     const basePrice = 1500;
-  //     const allRooms = parseInt(regRooms.value * 50);
-  //     const allBathRooms = parseInt(bathRooms.value * 90);
-  
-  //     const totalprice = basePrice + allRooms + allBathRooms;
-  
-  //     alert(totalprice);
-  
-  //   }
-  // })
   
   
   const swiper = new Swiper('.mySwiper', {
@@ -76,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
     centeredSlides: true,
     loop: true,
     autoplay: {
-      delay: 1200,
+      delay: 1500,
       disableOnInteraction: false,
     },
     navigation: {
