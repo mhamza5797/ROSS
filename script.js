@@ -45,26 +45,26 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  const selectedOption = document.querySelector('#underline_select');
+  // const selectedOption = document.querySelector('#underline_select');
 
 
 
-  const services = selectedOption.addEventListener('change', () =>{
+  // const services = selectedOption.addEventListener('change', () =>{
   
-    const regRooms = document.querySelector('#selectRooms');
-    const bathRooms = document.querySelector('#selectBathrooms');
+  //   const regRooms = document.querySelector('#selectRooms');
+  //   const bathRooms = document.querySelector('#selectBathrooms');
   
-    if(selectedOption.value == 'Cleaning'){
-      const basePrice = 1500;
-      const allRooms = parseInt(regRooms.value * 50);
-      const allBathRooms = parseInt(bathRooms.value * 90);
+  //   if(selectedOption.value == 'Cleaning'){
+  //     const basePrice = 1500;
+  //     const allRooms = parseInt(regRooms.value * 50);
+  //     const allBathRooms = parseInt(bathRooms.value * 90);
   
-      const totalprice = basePrice + allRooms + allBathRooms;
+  //     const totalprice = basePrice + allRooms + allBathRooms;
   
-      alert(totalprice);
+  //     alert(totalprice);
   
-    }
-  })
+  //   }
+  // })
   
   
   
