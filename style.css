@@ -67,8 +67,9 @@ body{
 
 .estBox{
     padding: 50px;
-    background-color: #13574b;
+    background-color: #fff;
     border-radius: 20px;
+    border: 1px solid #13574b;
 }
 
 .estBox h1{
@@ -81,11 +82,12 @@ body{
     padding: 10px;
     border-top: none;
     border-left: none;
+    color: #13574b;
     border-right: none;
 }
 
 .sliderStyles{
-    color: #fff;
+    color: #13574b;
     font-size: 1.6rem;
     text-transform: uppercase;
 }
@@ -93,8 +95,9 @@ body{
 .innerSlider{
     padding: 35px;
     cursor: pointer;
-    background-color: #13574b;
+    background-color: #fff;
     height: 350px;
+    color: #13574b;
 }
 
 .totalCalcPrice{
@@ -147,4 +150,12 @@ body{
 .aScroll:hover .arrowhov{
     color: #13574b;
 
+}
+
+.inner-card-p{
+    color: #13574b;
+}
+
+.estform{
+    color: #13574b;
 }
