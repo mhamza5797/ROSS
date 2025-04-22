@@ -30,10 +30,9 @@ body{
 
 
 .customLetters{
-    letter-spacing: .5rem;
+
     text-transform: uppercase;
     color: #13574b;
-    text-shadow: 1px 1px 10px #13574b;
 
 }
 
@@ -53,7 +52,7 @@ body{
     border-radius: 50%;
     margin-top: 35px;
     margin-bottom: 35px;
-    box-shadow: 70px 25px 150px #13574b;
+    border: 5px solid #13574b;
     width: 100%; 
     max-width: 400px; 
 }
