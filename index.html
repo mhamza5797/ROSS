@@ -13,6 +13,10 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-D...yourOwnIntegrity..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </head>
 <body>
     <nav style="background-color: #13574b;" class="border-b">
@@ -86,10 +90,9 @@
             </div>
         </div>
 
-<div id="estsection" class="row align-items-center" style="margin-bottom: 50px;">
-    <!-- Form Section -->
-    <div class="col-12 col-md-6 mb-4">
-        <div class="estBox">
+<div class="row align-items-center" style="margin-bottom: 50px;">
+    <div class="col-12 col-md-6 mb-4 d-flex">
+        <div class="estBox w-100">
             <form class="estform max-w-md mx-auto w-100">
                 <h1>GET AN ESTIMATE NOW</h1>
 
@@ -155,7 +158,84 @@
     </div>
 
     <div class="col-12 col-md-6">
-        <h1 style="text-align: center; color: #fff; background-color: #13574b; padding: 15px; font-size: 1.5rem; text-transform: uppercase;">Booking System Coming Soon!</h1>
+        <div id="estsection" class="row align-items-center">
+            <div class="col-12 mb-4 d-flex">
+                <div class="estBox w-100">
+                    <form class="estform max-w-md mx-auto w-100">
+                        <h1 style="text-transform: uppercase;">BOOK consultation Now</h1>
+        
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-3">
+                                <div class="relative">
+                                    <input type="name" min="0" style="padding: 10px; border: 1px solid #13574b; color: #13574b" id="fName" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label style="background-color: #fff; color: #13574b;" for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 mb-3">
+                                <div class="relative">
+                                    <input type="name" min="0" style="padding: 10px; border: 1px solid #13574b; color: #13574b" id="lName" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label style="background-color: #fff; color: #13574b;" for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1">Last Name</label>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="relative">
+                            <input type="email" min="0" style="padding: 10px; border: 1px solid #13574b; color: #13574b;" id="email" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label style="background-color: #fff; color: #13574b;" for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1">Email</label>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-12 col-sm-6 mb-3 mt-3">
+                                <div class="relative">
+                                    <input type="date" min="0" style="padding: 10px; border: 1px solid #13574b; color: #13574b" id="date" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label style="background-color: #fff; color: #13574b;" for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1">Date</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 mb-3 mt-3">
+                                <div class="relative">
+                                    <input 
+                                        type="time" 
+                                        id="time" 
+                                        value="00:00"
+                                        min="09:00" 
+                                        max="18:00"
+                                        style="padding: 10px; padding-right: 40px; border: 1px solid #13574b; color: #13574b;" 
+                                        class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" 
+                                        required 
+                                    />
+                                    <label 
+                                        for="time" 
+                                        style="background-color: #fff; color: #13574b;" 
+                                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] dark:bg-gray-900 px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                                    >
+                                        Select Time
+                                    </label>
+  
+                                </div>
+                            </div>
+                            
+                            <div class="relative">
+                                
+                                <label style="color: #13574b;" for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Message:</label>
+                                <textarea style="background-color: #fff; border: 1px solid #13574b; padding: 5px; color: #000; resize: none;" id="consultation" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Please Enter Your Message Here"></textarea>
+                            </div>
+                                                    
+                        </div>
+
+                       
+
+        
+                     
+                        <div class="col-12 col-sm-6 mb-3 mt-3">
+                            <button style="background-color: #13574b; color: #fff; padding: 10px 15px; width: 100%;" id="bookNow" type="button" class="bg-blue-700 rounded-lg text-sm dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Book Now</button>
+                         </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -262,9 +342,6 @@
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="imgs/img4.jpeg" class="block w-full h-full object-contain mx-auto cursor-pointer" alt="">
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="imgs/img5.jpeg" class="block w-full h-full object-contain mx-auto cursor-pointer" alt="">
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="imgs/img6.jpeg" class="block w-full h-full object-contain mx-auto cursor-pointer" alt="">

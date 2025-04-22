@@ -15,7 +15,7 @@ html {
 
 body{
     background-color: #fff;
-    background-image: url(imgs/bg6.jpg);
+    background-image: url(imgs/bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -65,11 +65,16 @@ body{
     }
 }
 
-.estBox{
+
+.estBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 50px;
-    background-color: #fff;
-    border-radius: 20px;
     border: 1px solid #13574b;
+    border-radius: 20px;
+    background-color: #fff;
 }
 
 .estBox h1{
