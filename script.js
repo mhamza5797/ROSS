@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let flatRate = 0;
 
       if (addSqft <= 425) {
-        flatRate = 180;         
+        flatRate = 60;         
         perRoomRate = 55;
       } else if (addSqft >= 425 && addSqft <= 545) {
         flatRate = 180;
