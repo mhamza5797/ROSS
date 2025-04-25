@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     calcNow.onclick = () => {
       if (selectedOption.value === 'Cleaning') {
         
-        let regRooms = parseInt(document.querySelector('#selectRooms').value || 0);
+      let regRooms = parseInt(document.querySelector('#selectRooms').value || 0);
       let bathRooms = parseInt(document.querySelector('#selectBathrooms').value || 0);
       let addSqft = parseInt(document.querySelector('#selectSqft').value || 0);
 
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const totalBathCost = bathRooms * 7.99;
       const totalAddOns = fridgePrice + microwavePrice + ovenPrice;
 
-      const totalPrice = flatRate + totalBathCost + totalAddOns + totalRoomCost;
+      const totalPrice = flatRate + totalBathCost + totalAddOns + totalRoomCost + basePrice;
 
       showTotal.innerHTML = '';
       showTotal.append(`$${totalPrice.toFixed(2)}`);
