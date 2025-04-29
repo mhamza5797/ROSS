@@ -65,30 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const microwavePrice = document.querySelector('#microwaveInput').checked ? 55 : 0;
       const ovenPrice = document.querySelector('#ovenInput').checked ? 25 : 0;
 
-      const basePrice = 200;
-      let perRoomRate = 0;
-      let flatRate = 0;
-      const totalSqft = addSqft * 0.76;
+      const totalRooms = regRooms * 25;
+      const totalBathRooms = bathRooms * 30;
+      let totalSqft = addSqft * 0.55;
 
-      if (addSqft <= 425) {
-        flatRate = 180;         
-        perRoomRate = 55;
-      } else if (addSqft >= 425 && addSqft <= 545) {
-        flatRate = 180;
-        perRoomRate = 60;
-      } else if (addSqft > 545 && addSqft <= 725) {
-        flatRate = 540;
-        perRoomRate = 65;
-      } else {
-        flatRate = 720;
-        perRoomRate = 70;
-      }
-
-      const totalRoomCost = regRooms * perRoomRate;
       const totalBathCost = bathRooms * 7.99;
       const totalAddOns = fridgePrice + microwavePrice + ovenPrice;
 
-      const totalPrice = flatRate + totalBathCost + totalAddOns + totalRoomCost + basePrice + totalSqft;
+      const totalPrice = totalBathRooms + totalBathCost + totalAddOns + totalRooms + totalSqft;
 
       showTotal.innerHTML = '';
       showTotal.append(`$${totalPrice.toFixed(2)}`);
@@ -99,35 +83,25 @@ document.addEventListener('DOMContentLoaded', function () {
         let bathRooms = parseInt(document.querySelector('#selectBathrooms').value || 0);
         let addSqft = parseInt(document.querySelector('#selectSqft').value || 0);
   
-        const fridgePrice = document.querySelector('#frideInput').checked ? 25 : 0;
-        const microwavePrice = document.querySelector('#microwaveInput').checked ? 55 : 0;
-        const ovenPrice = document.querySelector('#ovenInput').checked ? 25 : 0;
+        const fridgePrice = document.querySelector('#frideInput').checked ? 40 : 0;
+        const microwavePrice = document.querySelector('#microwaveInput').checked ? 70 : 0;
+        const ovenPrice = document.querySelector('#ovenInput').checked ? 40 : 0;
   
-        const basePrice = 200;
-        let perRoomRate = 0;
-        let flatRate = 0;
-        const totalSqft = addSqft * 0.89;
-
+        const totalRooms = regRooms * 25;
+        const totalBathRooms = bathRooms * 30;
+        let totalSqft = addSqft * 0;
   
-        if (addSqft <= 425) {
-          flatRate = 180;         
-          perRoomRate = 55;
-        } else if (addSqft >= 425 && addSqft <= 545) {
-          flatRate = 180;
-          perRoomRate = 60;
-        } else if (addSqft > 545 && addSqft <= 725) {
-          flatRate = 540;
-          perRoomRate = 65;
-        } else {
-          flatRate = 720;
-          perRoomRate = 70;
+        if (addSqft < 1200) {
+          totalSqft = addSqft * 0.80;
+  
+        }else{
+          totalSqft = addSqft * 0.68;
         }
   
-        const totalRoomCost = regRooms * perRoomRate;
         const totalBathCost = bathRooms * 7.99;
         const totalAddOns = fridgePrice + microwavePrice + ovenPrice;
   
-        const totalPrice = flatRate + totalBathCost + totalAddOns + totalRoomCost + basePrice + totalSqft;
+        const totalPrice = totalBathRooms + totalBathCost + totalAddOns + totalRooms + totalSqft;
   
         showTotal.innerHTML = '';
         showTotal.append(`$${totalPrice.toFixed(2)}`);
