@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const basePrice = 200;
       let perRoomRate = 0;
       let flatRate = 0;
+      const totalSqft = addSqft * 0.76;
 
       if (addSqft <= 425) {
         flatRate = 180;         
@@ -87,19 +88,59 @@ document.addEventListener('DOMContentLoaded', function () {
       const totalBathCost = bathRooms * 7.99;
       const totalAddOns = fridgePrice + microwavePrice + ovenPrice;
 
-      const totalPrice = flatRate + totalBathCost + totalAddOns + totalRoomCost + basePrice;
+      const totalPrice = flatRate + totalBathCost + totalAddOns + totalRoomCost + basePrice + totalSqft;
 
       showTotal.innerHTML = '';
       showTotal.append(`$${totalPrice.toFixed(2)}`);
-      }else if(selectedOption.value === 'Painting'){
+      }
+      else if (selectedOption.value === 'DeepCleaning') {
+        
+        let regRooms = parseInt(document.querySelector('#selectRooms').value || 0);
+        let bathRooms = parseInt(document.querySelector('#selectBathrooms').value || 0);
+        let addSqft = parseInt(document.querySelector('#selectSqft').value || 0);
+  
+        const fridgePrice = document.querySelector('#frideInput').checked ? 25 : 0;
+        const microwavePrice = document.querySelector('#microwaveInput').checked ? 55 : 0;
+        const ovenPrice = document.querySelector('#ovenInput').checked ? 25 : 0;
+  
+        const basePrice = 200;
+        let perRoomRate = 0;
+        let flatRate = 0;
+        const totalSqft = addSqft * 0.89;
+
+  
+        if (addSqft <= 425) {
+          flatRate = 180;         
+          perRoomRate = 55;
+        } else if (addSqft >= 425 && addSqft <= 545) {
+          flatRate = 180;
+          perRoomRate = 60;
+        } else if (addSqft > 545 && addSqft <= 725) {
+          flatRate = 540;
+          perRoomRate = 65;
+        } else {
+          flatRate = 720;
+          perRoomRate = 70;
+        }
+  
+        const totalRoomCost = regRooms * perRoomRate;
+        const totalBathCost = bathRooms * 7.99;
+        const totalAddOns = fridgePrice + microwavePrice + ovenPrice;
+  
+        const totalPrice = flatRate + totalBathCost + totalAddOns + totalRoomCost + basePrice + totalSqft;
+  
+        showTotal.innerHTML = '';
+        showTotal.append(`$${totalPrice.toFixed(2)}`);
+      }
+      else if(selectedOption.value === 'Painting'){
 
         const regRooms = parseInt(document.querySelector('#selectRooms').value || 0);
         const bathRooms = parseInt(document.querySelector('#selectBathrooms').value || 0);
         const addSqft = parseInt(document.querySelector('#selectSqft').value || 0);
 
-        const fridgePrice = document.querySelector('#frideInput').checked ? 100 : 0;
-        const microwavePrice = document.querySelector('#microwaveInput').checked ? 50 : 0;
-        const ovenPrice = document.querySelector('#ovenInput').checked ? 200 : 0;
+        const fridgePrice = document.querySelector('#frideInput').checked ? 25 : 0;
+        const microwavePrice = document.querySelector('#microwaveInput').checked ? 55 : 0;
+        const ovenPrice = document.querySelector('#ovenInput').checked ? 25 : 0;
 
         const basePrice = 2000;
         const totalRooms = regRooms * 150;
